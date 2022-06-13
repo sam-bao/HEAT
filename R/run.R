@@ -26,7 +26,7 @@
 #' @export
 app <- function(launch_browser = TRUE) {
   invisible(shinyApp(
-    ui = appTemplate("app"),
+    ui = heatplus:::appTemplate("app"),
     server = function(input, output, session) {
       callModule(
         module = appServer,
